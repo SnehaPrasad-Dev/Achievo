@@ -1,0 +1,28 @@
+.auth-card {
+    background: #032359; 
+    padding: 40px; 
+    border-radius: 12px;
+    width: 360px;
+     text-align: center; 
+     color: white; 
+     margin-top: 150px;
+     margin-left: 550px;
+
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px; 
+    border: none;
+}
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient( to right, #f59e0b, #f97316);
+      color: white; 
+    border: none;
+     border-radius: 6px;
+      cursor: pointer;
+       font-weight: bold;
+}

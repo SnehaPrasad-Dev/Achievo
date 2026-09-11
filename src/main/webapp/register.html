@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievo - Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link  rel="stylesheet" href="css/navbar.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+        <div class="logo-container">
+            <img src="images/navlogo (2).jpeg" alt="Achievo Logo">
+        </div>
+        </div>
+        <div class="nav-buttons">
+            <button class="login"><a href="login.html">Login</a></button>
+            <button class="register"><a href="register.html">Register</a></button>
+        </div>
+    </nav>
+   
+    <!-- REGISTER BOX -->
+    <div class="register-container">
+        <div class="register-card">
+            <h2>Register</h2>
+            <p>Create your Achievo account!</p>
+
+            <form action="RegisterServlet" method="POST" id="registerForm">
+                <div class="input-group">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Enter your Email" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" name="password" id="reg-pass" placeholder="Create Password" required>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="confirmpass" id="reg-cpass" placeholder="Confirm Password" required>
+                </div>
+
+                <button type="submit" class="register-now-btn">Register Now</button>
+            </form>
+
+            <p class="login-text">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

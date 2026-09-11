@@ -1,0 +1,133 @@
+/* Login Card Styling */
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-buttons{
+
+    display: flex;
+    margin-left: auto;
+}
+.nav-buttons button{
+    margin-left: 10px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login{
+    background: linear-gradient( to right, #f59e0b, #f97316);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.login:hover{
+    transform:scale(1.1);
+}
+.register{
+    background: linear-gradient( to right, #f59e0b, #f97316);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register:hover{
+    transform:scale(1.1);
+}
+/* CENTER BOX */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.login-card {
+    background: linear-gradient(#032359);
+    padding: 40px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+
+.input-group{
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #f0f2f5;
+}
+
+/* OPTIONS */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 10px 0 20px;
+}
+
+.options a {
+    color: #ffb74d;
+    text-decoration: none;
+}
+
+/* BUTTON */
+.login-now-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #f59e0b, #f97316);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-now-btn:hover {
+    opacity: 0.9;
+}
+.reg-text{
+    margin-top: 20px;
+    font-size: 13px;
+}
+.reg-text a {
+    color: #ffb74d;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* FOOTER TEXT */
+.bottom-text {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.bottom-text a {
+    color: #ffb74d;
+    text-decoration: none;
+}

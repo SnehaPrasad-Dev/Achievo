@@ -1,0 +1,62 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* CENTERING FIX (bulletproof) */
+.auth-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CARD */
+.auth-card {
+    background: #032359;
+    padding: 35px;
+    border-radius: 12px;
+    width: 340px;
+    text-align: center;
+    color: white;
+
+    /* Modern UI */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* INPUT */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #f59e0b, #f97316);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.auth-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: white;
+}

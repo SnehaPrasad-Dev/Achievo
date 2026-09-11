@@ -1,0 +1,19 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Build output
+build/
+bin/
+
+# Local configuration / secrets
+.env
+*.properties
+
+# Database backups
+*.sql
+
+# OS files
+.DS_Store
+Thumbs.db

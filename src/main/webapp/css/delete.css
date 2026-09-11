@@ -1,0 +1,26 @@
+/* Reusing the same layout from Change Password/Email */
+
+.auth-card p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Red Background for the Delete Button */
+.delete-btn {
+    background: #d93025 !important;
+}
+
+.delete-btn:hover {
+    background: #b91d14 !important;
+}
+
+/* Input fields matching previous designs */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px; 
+    border: none;
+    outline: none;
+}

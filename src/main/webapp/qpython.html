@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Certification - Achievo</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/qhtml.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-left">
+            <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+            <div class="logo-container">
+                <img src="images/navlogo (2).jpeg" alt="Achievo Logo">
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button class="login"><a href="home.html">Logout</a></button>
+        </div>
+    </nav>
+<div id="mySidebar" class="sidebar">
+          <a href="start.html">Home</a>
+        <a href="mock.html">Mock Tests</a>
+        <a href="studymaterial.html">Study Material</a>
+        <a href="settings.html">Settings</a>
+    </div>
+
+    <main class="content">
+        <div class="quiz-container">
+            <div class="quiz-layout">
+                <aside class="left-column">
+                    <div class="card info-card">
+                        <h3>Exam Overview</h3>
+                        <p>Subject: <b>Python</b></p>
+                        <p>Questions: <b>60</b></p>
+                    </div>
+
+                    <div class="card navigator-card">
+                        <h3>Question Navigator</h3>
+                        <div id="question-grid" class="question-grid"></div>
+                        <div class="legend">
+                            <div class="leg-item"><span class="dot current"></span> Current</div>
+                            <div class="leg-item"><span class="dot answered"></span> Answered</div>
+                            <div class="leg-item"><span class="dot unanswered"></span> Unanswered</div>
+                        </div>
+                    </div>
+
+                    <div class="card timer-card">
+                        <h3>Time Left</h3>
+                        <div class="timer-display">
+                            <div class="circle" id="timer-circle">
+                                <span id="time-display">30:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="right-column">
+                    <div class="quiz-header">
+                        <span id="question-progress" class="badge">Question 1 of 60</span>
+                        <div class="nav-buttons">
+                            <button class="btn-outline" onclick="clearAnswer()">Clear Answer</button><span>
+                            <button class="btn-border-orange" onclick="nextQuestion()">Next &rarr;</button>
+                        </div>
+                    </div>
+<br>
+                    <div class="card question-card">
+                        <h2 id="q-text">Loading question...</h2>
+                        <div id="options-container" class="options-container"></div>
+                        <div class="footer-actions">
+                            <button class="btn-save" onclick="saveAndNext()">Next &rarr;</button>
+                            <button class="btn-border-orange" onclick="submitQuiz()">Submit Exam</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script src="qpython.js"></script>
+</body>
+</html>

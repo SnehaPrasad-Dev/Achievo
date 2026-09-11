@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot password</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/forgot.css">
+</head>
+<body>
+     <nav class="top-nav">
+        <div class="nav-left">
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+        <div class="logo-container">
+            <img src="images/navlogo (2).jpeg" alt="Achievo Logo">
+        </div>
+        </div>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="mock.html">Mock Tests</a>
+        <a href="studymaterial.html">Study Material</a>
+        <a href="settings.html">Settings</a>
+    </div>
+    <div class="auth-container">
+    <div class="auth-card">
+        <h2>Forgot Password</h2>
+        <p>Enter email to get OTP on console</p>
+        <form action="ForgotPasswordServlet" method="POST" id="forgotForm">
+            <div class="input-group">
+                <input type="email" name="email" id="forgot-email" placeholder="Registered Email" required>
+            </div><br>
+            <button type="submit" class="auth-btn">Send OTP</button>
+        </form>
+    </div>
+</div>
+<script src="forgot.js"></script>
+</body>
+</html>

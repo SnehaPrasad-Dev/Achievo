@@ -1,0 +1,102 @@
+/* Layout for 2x2 Grid */
+
+.account-grid-2x2 {
+    display: grid;
+    /* 2 columns, 300px each (same as Personal Info box) */
+    grid-template-columns: repeat(2, 300px); 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Common Card Styling (Maintaining original size) */
+.setting-card {
+    background-color: #032359;
+    border: 1px solid #e0e4f0;
+    border-radius: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #032359;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    width: 300px; /* Fixed width like previous boxes */
+}
+
+/* Blank Circles as requested */
+.blank-icon-circlep {
+    width: 70px;
+    height: 70px;
+    background-color: #f1f3f6;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url("../images/changespass.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blank-icon-circlee{
+    width: 70px;
+    height: 70px;
+    background-color: #f1f3f6;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url("../images/changeemail.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blank-icon-circlel{
+    width: 70px;
+    height: 70px;
+    background-color: #f1f3f6;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url("../images/logouticon.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blank-icon-circled{
+    width: 70px;
+    height: 70px;
+    background-color: #f1f3f6;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url("../images/deleteacc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Button Styling */
+.auth-btn {
+    background: linear-gradient( to right, #f59e0b, #f97316);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.delete-btn { background: linear-gradient( to right, #f34242, #e01515);}
+.logout-btn { background: linear-gradient( to right, #f59e0b, #f97316); }
+
+/* Main Content Push Transition */
+#main {
+    margin-top: 60px;
+    transition: margin-left 0.4s ease;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .account-grid-2x2 {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        justify-items: center;
+    }
+}

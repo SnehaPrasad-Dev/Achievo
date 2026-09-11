@@ -1,0 +1,159 @@
+:root {
+    --orange: #ff7a00;
+    --green: #28a745;
+    --bg: #f5f7ff;
+    --border: #e2e8f0;
+}
+
+body { font-family: Arial, sans-serif; 
+    margin: 0; 
+    background: var(--bg); 
+}
+
+.quiz-layout { 
+    display: flex; 
+    gap: 20px; 
+    padding: 20px; 
+}
+.left-column { 
+    width: 320px; 
+}
+.right-column { 
+    flex: 1; 
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* Question Grid Navigator */
+.question-grid { 
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 8px; 
+    margin-top: 15px; 
+}
+.num-btn { 
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid var(--border); 
+    border-radius: 6px;
+    display: flex;
+     align-items: center; 
+     justify-content: center; 
+     cursor: pointer;
+    font-size: 14px; 
+    transition: 0.3s;
+}
+.num-btn.active { 
+    background: var(--orange) !important; 
+    color: white; 
+    border: none; 
+}
+.num-btn.answered { 
+    background: var(--green); 
+    color: white; 
+    border: none; 
+}
+
+/* Options Styling */
+.option-label {
+    display: flex; 
+    align-items: center; 
+    padding: 15px; 
+    border: 1px solid var(--border); 
+    border-radius: 10px; 
+    margin-bottom: 12px; 
+    cursor: pointer; 
+    transition: 0.2s;
+}
+.option-label:hover { 
+    background: #fff9f4; 
+    border-color: var(--orange); 
+}
+.option-label input { 
+    margin-right: 15px; 
+    accent-color: var(--orange); 
+}
+
+/* Timer Animation Circle */
+.timer-display .circle {
+    width: 100px; 
+    height: 100px;
+     border-radius: 50%; 
+     margin: 0 auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-weight: bold; 
+    font-size: 20px;
+    background: conic-gradient(var(--orange) 100%, #e2e8f0 0%); /* Initial State */
+    position: relative; 
+    z-index: 1;
+}
+.timer-display .circle::before {
+    content: ""; 
+    position: absolute;
+     width: 88px;
+      height: 88px;
+    background: white; border-radius: 50%;
+     z-index: -1;
+}
+
+/* Buttons */
+.btn-save { 
+    background: var(--orange); color: white; 
+    border: none;
+    margin-top: 50px; 
+    padding: 12px 30px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    float: right; 
+}
+.btn-outline {
+     background: none; 
+     border: 1px solid #ccc; 
+     padding: 8px 15px; 
+     border-radius: 5px; 
+     cursor: pointer; 
+     margin-right: 10px; 
+}
+.btn-border-orange { 
+    background: white; 
+    border: 1px solid var(--orange); 
+    color: var(--orange); 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/* Legend */
+.legend { 
+    margin-top: 15px; 
+    font-size: 12px; 
+}
+.leg-item { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 5px; 
+}
+.dot { width: 10px; 
+    height: 10px;
+    border-radius: 50%; 
+    margin-right: 8px; 
+}
+.dot.current { 
+    background: var(--orange); 
+}
+.dot.answered { 
+    background: var(--green); 
+}
+.dot.unanswered { 
+    background: white; 
+    border: 1px solid #ccc; 
+}
